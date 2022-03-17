@@ -33,7 +33,7 @@ class CreateBook extends Component {
     };
 
     axios
-      .post("http://localhost:8082/api/books", data)
+      .post("https://worksheet3cise.herokuapp.com/api/books", data)
       .then((res) => {
         this.setState({
           title: "",
