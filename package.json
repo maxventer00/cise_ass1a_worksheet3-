@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "cd worksheet3_client && npm run build",
     "install-client": "cd worksheet3_client && npm install",
-    "heroku-postbuild": "cd worksheet3_client && npm install && npm run build",
+    "heroku-postbuild": "npm run install-client && npm run build",
     "server": "nodemon app.js",
     "develop": "concurrently --kill-others-on-fail \"npm run app\" \"npm run app --prefix worksheet3_client\"",
     "start": "concurrently --kill-others-on-fail \"npm run app\" \"npm run app --prefix worksheet3_client\""
