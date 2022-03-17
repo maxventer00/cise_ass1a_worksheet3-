@@ -10,8 +10,8 @@
     "install-client": "cd worksheet3_client && npm install",
     "heroku-postbuild": "npm run install-client && npm run build",
     "server": "nodemon app.js",
-    "develop": "concurrently --kill-others-on-fail \"npm run server\" \"npm run start --prefix worksheet3_client\"",
-    "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run start --prefix worksheet3_client\""
+    "develop": "concurrently --kill-others-on-fail \"npm run app\" \"npm run app --prefix worksheet3_client\"",
+    "start": "concurrently --kill-others-on-fail \"npm run app\" \"npm run app --prefix worksheet3_client\""
   },
   "repository": {
     "type": "git",
